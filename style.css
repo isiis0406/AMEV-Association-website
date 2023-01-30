@@ -2,7 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
 }
+h2{
+    text-align: center;
+    margin: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* --------Banner-------------- */
+
 header{
     display: flex;
     align-items: flex-start;
@@ -34,34 +46,36 @@ header .logo{
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
+
+/* --------Presentation-------------- */
 .presentation{
-    margin-top: 3em;
+    padding: 3em;
+    background-color: #f5f5ef;
 }
 
 .presentImages{
     display: flex;
-}
-.presentImage1 img{
-    width: 300px;
+    justify-content: center;
     margin-top: 4em;
 }
+.presentImage1 img{
+    width: 18em;
+    margin-top: 6em;
+    margin: 2em;
+}
 .presentImage2 img{
-    width: 300px;
+    width: 18em;
     /* margin-top: 100px; */
-    margin-left: 40px;
 
 }
 .presentationText{
+    width: 50vw;
     margin-top: 3em;
     padding: 2em;
     display: flex;
     flex-direction: column;
 }
-.presentationText h2{
-    font-size: 2rem;
-    font-weight: 400;
-    text-align: center;
-}
+
 .presentationText p{
     margin-top: 2em;
     font-size: 1em;
@@ -74,6 +88,8 @@ header .logo{
     padding: 0.8em;
     border-radius: 1em;
     margin: auto;
+    background-color: #000000;
+    color: #f5f5ef;
 
 }
 .presentationText button:hover{
@@ -81,4 +97,69 @@ header .logo{
     color: white;
     transition: all;
     transition-duration: 0.3s;
+}
+
+/* --------Activity-------------- */
+
+
+.activity{
+    padding: 20px;
+}
+
+.activity img{
+    width:350px;
+}
+.activity h3{
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 20px;
+
+}
+.activity p{
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0 20px;
+    text-align: justify;
+
+}
+.objectifs img{
+    height: 60vh;
+}
+.objectifs p{
+    font-size: 1em;
+    font-weight: 300;
+    padding:  50px 250px;
+    text-align: justify;
+}
+
+/* ----------Realisation---------- */
+#realisations{
+    background-color: #f5f5ef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item{
+}
+.realisations{
+    padding:10px  ;
+}
+.realisations{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.verticalImgs{
+    display: flex;
+    
+}
+
+.verticalImgs img{
+    width: 500px;
+    padding: 20px;
+}
+.lineImg{
+    width: 100px;
 }
