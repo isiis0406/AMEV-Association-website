@@ -3,43 +3,76 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
 }
+
 h2{
     text-align: center;
     margin: 40px;
     font-size: 2rem;
     font-weight: 500;
     text-transform: uppercase;
-    text-align: center;
 }
+
 /* --------Banner-------------- */
 
-header{
+.hero{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     background-image: url('./images/banniere/Bannière.png');
     background-repeat: repeat;
     background-size: cover;
-    
     height: 70vh;
 }
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em;
+    margin-top: 20em;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.hero-content p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.hero-content button{
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 1em;
+    background-color: #000000;
+    color: #f5f5ef;
+}
+
 header .logo{
     font-size: 40px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     padding: 20px;
-    
     color: white;
-
 }
+
 .navList{
     display: flex;
     align-items: center;
     list-style: none;
     margin-top: 20px;
 }
+
 .navItem{
     text-decoration: none;
     padding-right: 20px;
@@ -47,10 +80,40 @@ header .logo{
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+    .hero{
+        height: 50vh;
+    }
+
+    .hero-content{
+        margin-left: 1em;
+        margin-top: 10em;
+    }
+
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+}
+
 /* --------Presentation-------------- */
+
 .presentation{
     padding: 3em;
     background-color: #f5f5ef;
+}
+
+.presentation-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.presentation img {
+    max-width: 100%;
+    height: auto;
 }
 
 .presentImages{
@@ -58,16 +121,12 @@ header .logo{
     justify-content: center;
     margin-top: 4em;
 }
-.presentImage1 img{
-    width: 18em;
-    margin-top: 6em;
-    margin: 2em;
-}
-.presentImage2 img{
-    width: 18em;
-    /* margin-top: 100px; */
 
+.presentImage1 img, .presentImage2 img{
+    width: 15em;
+    margin: 2rem;
 }
+
 .presentationText{
     width: 50vw;
     margin-top: 3em;
@@ -82,6 +141,7 @@ header .logo{
     font-weight: 300;
     text-align: justify;
 }
+
 .presentationText button{
     border: none;
     outline: none;
@@ -90,8 +150,8 @@ header .logo{
     margin: auto;
     background-color: #000000;
     color: #f5f5ef;
-
 }
+
 .presentationText button:hover{
     background-color: rgb(71, 71, 71);
     color: white;
@@ -99,67 +159,266 @@ header .logo{
     transition-duration: 0.3s;
 }
 
-/* --------Activity-------------- */
+/* activities */
+.activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em;
+}
 
+.activities-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 .activity{
+    display: flex;
+    flex-direction: column;
     padding: 20px;
+    width: calc(33.33% - 40px);
+    box-sizing: border-box;
 }
 
 .activity img{
-    width:350px;
+    max-width: 100%;
+    height: auto;
 }
+
+.activity-text{
+    padding: 20px 0;
+}
+
 .activity h3{
-    font-size: 1.2em;
-    font-weight: 400;
-    padding: 20px;
-
-}
-.activity p{
     font-size: 1em;
-    font-weight: 300;
-    padding: 0 20px;
-    text-align: justify;
+    font-weight: 400;
+    padding: 20px 0;
+}
 
+.activity p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
 }
+
+@media screen and (max-width: 768px) {
+    .activities-wrapper{
+        flex-direction: column;
+    }
+
+    .activity{
+        width: 100%;
+    }
+}
+
+/* Objectifs */
+
+.objectifs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    background-color: #f5f5ef;
+}
+
+.objectifs-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    box-sizing: border-box;
+}
+
 .objectifs img{
-    height: 60vh;
+    width: 100%;
+    height: auto;
 }
+
 .objectifs p{
     font-size: 1em;
     font-weight: 300;
-    padding:  50px 250px;
+    padding: 20px;
     text-align: justify;
 }
 
-/* ----------Realisation---------- */
+@media screen and (max-width: 768px) {
+    .objectifs-wrapper{
+        width: 100%;
+    }
+}
+
+/*  Réalisations */
 #realisations{
-    background-color: #f5f5ef;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3em;
 }
-.carousel-item{
-}
-.realisations{
-    padding:10px  ;
-}
+
 .realisations{
     display: flex;
-    max-width: 100%;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    width: 80%;
+    box-sizing: border-box;
 }
-.verticalImgs{
-    display: flex;
-    
+
+.carousel-inner{
+    width: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .realisations{
+        width: 100%;
+    }
 }
 
 .verticalImgs img{
-    width: 500px;
+    width: 100%;
     padding: 20px;
 }
-.lineImg{
-    width: 100px;
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-logo, .footer-contact, .footer-social {
+    width: 30%;
+}
+
+.footer-logo a, .footer-contact h3, .footer-social h3 {
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.social-icons a {
+font-size: 20px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .footer-logo, .footer-contact, .footer-social {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Media queries pour le responsive design */
+
+@media screen and (max-width: 768px) {
+    .hero{
+        height: 50vh;
+    }
+
+    .hero-content{
+        margin-left: 1em;
+        margin-top: 10em;
+    }
+
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+
+    .presentImages{
+        flex-direction: row;
+    }
+
+    .presentImage1 img, .presentImage2 img{
+        max-width: 200px;
+    }
+
+    .presentationText{
+        width: 100%;
+    }
+    .presentationText h2 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .presentationText p{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .presentation-wrapper{
+        flex-direction: column;
+    }
+    .objectifs p{
+        padding: 20px;
+    }
+
+    .realisations{
+        flex-direction: column;
+    }
+
+    .verticalImgs img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* Hero */
+    .hero-content h1{
+        font-size: 1.5rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    /* Presentation */
+   .presentImage1 img, .presentImage2 img{
+    max-width: 150px;
+    padding: 0;
+    margin: 10px;
+    }
+
+    .presentationText h2 {
+        font-size: 0.8rem;
+    }
+
+    .presentationText p{
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+
+    /* Activities */
+    .activity h3{
+        font-size: 0.8rem;
+    }
 }

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
         integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,40 +20,52 @@
 
 <body>
     <header>
-        <!-- <img src="/images/banniere/logo.png" alt="" class="logo"> -->
-        <span class="logo">AMEV</span>
-        <nav class="navbar">
-            <ul class="navList">
-                <li class="navLink">
-                    <a href="" class="navItem">Acceuil</a>
-                </li>
-                <li class="navLink">
-                    <a href="" class="navItem"> À propos </a>
-                </li>
-                <li class="navLink">
-                    <a href="" class="navItem">Nos actions </a>
-                </li>
-                <li class="navLink">
-                    <a href="" class="navItem">Nous soutenir</a>
-                </li>
-                <li class="navLink">
-                    <a href="" class="navItem">Contact</a>
-                </li>
-            </ul>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">AMEV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#presentation">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#activities">Nos actions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="event.html" class="nav-link">Nos événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-
     </header>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>
+                AEMV Enfants malades
+            </h1>
+            <p>
+                L'association AEMV Enfants malades aide les enfants malades et handicapés à améliorer leur confort
+                quotidien.
+            </p>
+        </div>
+    </section>
     <section class="presentation " id="presentation">
         <div class=" presentation-content ">
-            <div class="row  ">
-                <div class="col presentImages " >
-                    <div class="presentImage1 ">
+            <div class="presentation-wrapper ">
+                <div class="presentImages">
+                    <div class="presentImage1">
                         <img src="/images/presentation/presentation1.png" alt="Image d'un enfant à mobilité réduite">
                     </div>
                     <div class="presentImage2">
-                        <img src="/images/presentation/presentation 2.png" alt="Image d'un enfant à mobilité réduite">
+                        <img src="/images/presentation/presentation2.png" alt="Image d'un enfant à mobilité réduite">
                     </div>
                 </div>
                 <div class="col presentationText">
@@ -72,101 +85,128 @@
         </div>
 
     </section>
-    <section class="activity container" id="activity">
-        <div class="row activities">
-            <h2>Nos activités</h2>
-            <div class="col activity">
+    <section class="activities container" id="activities">
+        <h2>Nos activités</h2>
+        <div class="activities-wrapper">
+            <div class="activity">
                 <img src="/images/activite/activiite1.jpeg" alt="Aides aux familles ">
-                <h3>Aides aux familles </h3>
-                <p>
-                    Aide aux familles et aux structures spécialisées, pour soutenir les enfants malades et leur famille dans leurs besoins quotidiens.
-                </p>
+                <div class="activity-text">
+                    <h3>Aides aux familles </h3>
+                    <p>
+                        Aide aux familles et aux structures spécialisées, pour soutenir les enfants malades et leur
+                        famille
+                        dans leurs besoins quotidiens.
+                    </p>
+                </div>
             </div>
-            <div class="col activity">
+            <div class="activity">
                 <img src="/images/activite/activite2.jpeg" alt="Participer à des événements">
-                <h3>
-                    Participer à des événements
-                </h3>
-                <p>
-                    Nous récoltons des fonds grâce à nos participations à des événements  tels que les festivals, concerts, fêtes locales... 
-                </p>
+                <div class="activity-text">
+                    <h3>
+                        Participer à des événements
+                    </h3>
+                    <p>
+                        Nous récoltons des fonds grâce à nos participations à des événements tels que les festivals,
+                        concerts, fêtes locales...
+                    </p>
+                </div>
             </div>
-            <div class="col activity">
+            <div class="activity">
                 <img src="/images/activite/activite3.jpeg" alt="Dons d'équipements médicaux">
-                <h3>
-                    Dons d'équipements médicaux
-                </h3>
-                <p>
-                    Nous réalisons des dons de matériel médical, qui améliorent le confort des enfants malades
-                </p>
+                <div class="activity-text">
+                    <h3>
+                        Dons d'équipements médicaux
+                    </h3>
+                    <p>
+                        Nous réalisons des dons de matériel médical, qui améliorent le confort des enfants malades
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <section class="objectifs">
-        
-        <img src="/images/objectif/bannière objectifjpeg.jpeg" alt="">
-        <p>
-            Les objectifs de chaque projet sont clairement définis pour garantir l'efficacité de l'aide apportée. 
-            Par exemple, les dons de matériel médical visent à améliorer les conditions de vie des enfants malades, en leur fournissant du matériel adapté à leurs besoins. 
-            Les événements de collecte de fonds sont conçus pour permettre de récolter des fonds supplémentaires pour les différents projets de l’association.
+        <div class="objectifs-wrapper"></div>
+            <img src="/images/objectif/bannière objectifjpeg.jpeg" alt="">
+            <p>
+                Les objectifs de chaque projet sont clairement définis pour garantir l'efficacité de l'aide apportée.
+                Par exemple, les dons de matériel médical visent à améliorer les conditions de vie des enfants malades, en
+                leur fournissant du matériel adapté à leurs besoins.
+                Les événements de collecte de fonds sont conçus pour permettre de récolter des fonds supplémentaires pour
+                les différents projets de l’association.
             </p>
+        </div>
     </section>
-    <section id="realisations" >
+    <section id="realisations">
         <h2> Nos réalisations</h2>
         <div class="realisations">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/images/realisation/realisation1_1.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
+                    <div class="carousel-item active">
+                        <img src="/images/realisation/realisation1_1.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/images/realisation/realisation1-2.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
+                    <div class="carousel-item">
+                        <img src="/images/realisation/realisation1-2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/images/realisation/realisation2.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
+                    <div class="carousel-item">
+                        <img src="/images/realisation/realisation2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-        </div>
-     
-        <!-- <div class=" realisations">
-            <div class=" verticalImgs ">
-                <img class="" src="/images/realisation/realisation1_1.jpeg" alt="">
-                <img class="" src="/images/realisation/realisation1-2.jpeg" alt="">
             </div>
-           <div >
-            <img style="width: 40em;" src="/images/realisation/realisation2.jpeg" alt="">
-
-           </div>            
-
-        </div> -->
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>AEMV</h1>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Association AEMV Enfants malades</p>
+                <p>12 rue august kervern</p>
+                <p>29200 Brest</p>
+                <p>01 23 45 67 89</p>
+            </div>
+            <div class="footer-social">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/AEMV-Enfants-malades-569512889880550/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 
